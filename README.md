@@ -18,7 +18,7 @@
 
 The points that can be earned by the participant for each problem will be computed by the points allocated (*see table above*) divided by all the participants that has solved the problem. (e.g. *3 students solved **Rational Class** therefore, all 3 students will earn 70/3=23.33 points each*)
 
-For every exercise number you have finished, apply for a pull request on this repository to be evaluated by the author. Counting of valid solutions and distribution of points will be presented the next meeting.
+For every exercise number you have finished, apply for a pull request on this repository on the <code>submissions</code> branch to be evaluated by the author. Counting of valid solutions and distribution of points will be presented the next meeting.
 
 You can collaborate with your peers as long as you keep in mind that points will be divided amongst those who only apply for pull request with valid solutions.
 
