@@ -10,24 +10,24 @@ public class Prime
             j=1;  
             ct=0;  
 
-        while(j<=i)  
-        {  
-            if(i%j==0)  
-                ct++;  
-                j++;   
-        }  
+            while(j<=i)  
+            {  
+                if(i%j==0)  
+                    ct++;  
+                    j++;   
+            }  
 
-        if(ct==2)  
-        {  
-            System.out.printf("%d \t",i);  
-            count++;
-                      if(count == 5) {
-                          System.out.print("\n");
-                          count = 0;
-                      }
-            n++;  
-        }  
-        i++;
+            if(ct==2)  
+            {  
+                System.out.printf("%d \t",i);  
+                count++;
+                          if(count == 5) {
+                              System.out.print("\n");
+                              count = 0;
+                          }
+                n++;  
+            }  
+            i++;
         }    
     }  
 }  
