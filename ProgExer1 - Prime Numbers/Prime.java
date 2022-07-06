@@ -1,6 +1,5 @@
 public class Prime  
 {  
-
     public static void main(String[] args)   
     {  
         int ct=0,n=0,i=1,j=1,count=0;  
@@ -29,5 +28,6 @@ public class Prime
             }  
             i++;
         }    
-    }  
+    } 
+
 }  
