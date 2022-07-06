@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Alvin
+public class QDP
 {
 	public static void main(String[] args)
 	{
