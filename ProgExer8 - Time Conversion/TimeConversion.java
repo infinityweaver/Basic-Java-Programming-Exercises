@@ -6,7 +6,6 @@ public class TimeConversion
 
 	{
 	Scanner scan =new Scanner(System.in);
-
 	String conIn;
 
 	do
@@ -15,36 +14,36 @@ public class TimeConversion
 	System.out.print("Enter time in 24-hr format(hh mm):");
 	String inputTime = scan.nextLine();
 
-	String[]timeConv = inputTime.split("");
+	String[]timeCo = inputTime.split("");
 
-	int hrs = Integer.parseInt(timeConv[0]);
-	String mins = timeConv[1];
+	int hours = Integer.parseInt(timeCo[0]);
+	String minutes = timeCo[1];
 	String meridian;
 
 
-	if(hrs <12)
+	if(hours < 12)
 	{
-	meridian = "AM";
+	   meridian = "AM";
 	}
 
 
 	else
 	{
-	meridian = "PM";
+	  meridian = "PM";
 	}
 
 	
-	hrs %= 12;
+	hours %= 12;
 
-	if(hrs == 0)
+	if(hours == 0)
 	{
-	System.out.println("It's" + hrs+ ":"+ mins+ ""+ meridian);
+	System.out.println("It's 12" + " " +  minutes +" " + meridian);
 	}
 
 
 	else
 	{
-	System.out.println("It's" + hrs+ ":"+ mins+ ""+ meridian);
+	System.out.println("It's" + hours + " "+ minutes + " "+ meridian);
 	}
 
 
