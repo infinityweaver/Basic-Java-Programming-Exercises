@@ -25,13 +25,18 @@ public class TimeConversion
 			String mins = convo[1];
 			String meridiem;
 
+
 			if(hrs > 11)
 			{
 				meridiem = "PM"; 
 					if(hrs > 12)
 						hrs -= 12;
 			}
-
+			if(hrs == 24)
+			{
+				meridiem = "AM";
+				hrs = 12;
+			}
 			else
 			{
 				meridiem = "AM";
