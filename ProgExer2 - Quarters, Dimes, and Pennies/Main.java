@@ -27,12 +27,12 @@ public class Main
 	{
 		if ((amountLeft >= 0) && (amountLeft < 100))
 		{
-			int number;
+			int num;
 
-			number = amountLeft / coinValue;
-			amountLeft = amountLeft - number * coinValue;
+			num = amountLeft / coinValue;
+			amountLeft = amountLeft - num * coinValue;
 
-			int coin[] = {number, amountLeft};
+			int coin[] = {num, amountLeft};
 
 			return coin;
 		}
