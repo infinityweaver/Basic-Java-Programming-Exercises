@@ -13,7 +13,7 @@ public class AirLineSeats
 		while(decision.equals("y")||decision.equals("Y")&& !filledSeats(plane))
 		{
 			displaySeats(plane);
-			System.out.print("Please choose an unoccupied seat location(from 1A to 7D): ");
+			System.out.println("Please choose an unoccupied seat location(from 1A to 7D): ");
 			boolean okSeat = false;
 			while(okSeat == false)
 			{
@@ -22,7 +22,7 @@ public class AirLineSeats
 				int c = findColumnSeat(seat);
 
 				if (plane[r][c] == 'X')
-					System.out.print("Error: Invalid seat location, occupied.");
+					System.out.println("Error: Invalid seat location, occupied.");
 				else 
 				{
 					plane[r][c] = 'X';
@@ -30,7 +30,7 @@ public class AirLineSeats
 				}
 
 				displaySeats(plane);
-				System.out.print("Get another seat?[y|n]: ");
+				System.out.print("\n" + "Get another seat?[y|n]: ");
 				decision = input.nextLine();
 				System.out.print("\n ");
 			}
