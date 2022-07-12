@@ -25,10 +25,6 @@ public class TimeConversion
                 meridian = "A.M";
             }
             
-            if(hours == 24)
-            {
-                meridian = "A.M";
-            }
             
             else
             {
