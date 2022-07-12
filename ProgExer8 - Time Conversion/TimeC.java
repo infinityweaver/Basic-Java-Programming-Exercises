@@ -12,9 +12,7 @@ public class TimeC
 
             System.out.print("Enter time in 24-hr format (hh mm): ");
             String inputTime = scan.nextLine();
-
             String[] time = inputTime.split(" ");
-
             int hours = Integer.parseInt(time[0]);
             String mins = time[1];
             String dayTime;
