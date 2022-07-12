@@ -1,53 +1,47 @@
 import java.util.Scanner;
+
 public class TimeConversion
 {
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
-        String continueInput;
-
+        String proceed;
+        
         do
         {
 
             System.out.print("Enter time in 24-hr format (hh mm): ");
-            //asks for input of the time
             String inputTime = scan.nextLine();
 
-            String[] timeCo = inputTime.split(" ");
+            String[] time = inputTime.split(" ");
 
-            int hours = Integer.parseInt(timeCo[0]);
-            String minutes = timeCo[1];
-            String meridian;
+            int hours = Integer.parseInt(time[0]);
+            String mins = time[1];
+            String dayTime;
 
-            
             if(hours < 12)
             {
-                meridian = "A.M";
+                dayTime = "AM";
             }
-            
-            
             else
             {
-                meridian = "P.M";
+                dayTime = "PM";
             }
-
             hours %= 12;
 
 
             if(hours == 0) 
             {
-                System.out.println("It's 12" + " " + minutes +" " + meridian); 
+                System.out.println("It's 12:" + " " + mins +" " + dayTime);
             }
-
             else
             {
-                System.out.println("It's " + hours + " " + minutes +" " + meridian);
+                System.out.println("It's " + hours + ":" + mins +" " + dayTime);
             }
 
-            System.out.print("Continue to input another time? [y/n]: ");
-            continueInput = scan.nextLine();
+            System.out.print("\n" + "Continue to input another time? [y|n]: " );
+            proceed = scan.nextLine();
 
-        }while(continueInput.equals("y"));
-
+        }while(proceed.equals("y"));
     }
 }
