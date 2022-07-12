@@ -5,7 +5,8 @@ public class AirplaneSeating
 
     static int reservation = 0;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         char[][] seats = new char[7][4];
         for (int i = 0; i < 7; i++) 
             {
@@ -21,12 +22,7 @@ public class AirplaneSeating
         Scanner input = new Scanner(System.in);
         seatLoc = input.nextLine();
 
-        if (seatLoc.equals("n")) 
-        {
-            System.out.println("Reservation made, have a nice day.");
-            System.exit(0);
-        }
-        // check if input is within range and if the seat is unoccupied change into X if occupied return error
+        // input checker(range,uccupancy and X)
         while (reservation < 28 && seatLoc.length() > 0) 
         {
             int row = seatLoc.charAt(0) - '1';
@@ -59,16 +55,17 @@ public class AirplaneSeating
                 }
                 if (reservation < 28) 
                     {
-                    System.out.println("Input another reservation(from 1A to 7D), n for exit");
-                    seatLoc = input.nextLine();
-                    if (seatLoc.equals("n")) {
-                        System.out.println("Reservation made, have a nice day.");
-                        System.exit(0);
+                        System.out.println("Input another reservation(from 1A to 7D), n for exit");
+                        seatLoc = input.nextLine();
+                        if (seatLoc.equals("n")) 
+                        {
+                            System.out.println("Reservation made, have a nice day.");
+                            System.exit(0);
+                        }
                     }
-                }
             }
         }
-    }
+    }   
 
     public static void displaySeats(char[][] seats) 
     {
