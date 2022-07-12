@@ -9,6 +9,7 @@ public class Main
 		String ans = "";
 		do
 		{
+
 			new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
 			System.out.print("Enter the amount of change (from 1-99): ");
 			ans = scan.nextLine();
@@ -20,11 +21,30 @@ public class Main
 			System.out.println(amt[0] + " dime(s) and " + amt[1] + " penny(pennies)\n");
 			System.out.print("Do you want to enter another amount? [y|n] ");
 			ans = scan.nextLine();
+
 		}while(ans.equals("y"));
 	}
 
 	public static int[] computeCoin(int coinValue, int amountLeft)
+
 	{
-		//**TODO**//
+		if ((amountLeft >= 0) && (amountLeft < 100))
+		{
+			int number;
+
+
+			number = amountLeft / coinValue;
+			amountLeft = amountLeft - number * coinValue;
+
+			int coin[] = {number, amountLeft};
+
+			return coin;
+		
+		}
+		else
+		{
+			System.out.println("Error: Invalid amount, range is from 1 to 99.\n");
+		}
+		return null;
 	}
 }
