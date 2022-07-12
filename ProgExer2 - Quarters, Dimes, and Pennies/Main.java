@@ -26,5 +26,22 @@ public class Main
 	public static int[] computeCoin(int coinValue, int amountLeft)
 	{
 		//**TODO**//
+		if ((amountLeft >= 0) && (amountLeft <= 99))
+		{
+			int num;
+
+			num = amountLeft / coinValue;
+			amountLeft = amountLeft - num * coinValue;
+
+			int cent[] = {num, amountLeft};
+
+			return cent;
+		}
+		
+		else
+		{
+			System.out.println("Error: Invalid amount, range is from 1 to 99.\n");
+		}
+		return null;
 	}
 }
