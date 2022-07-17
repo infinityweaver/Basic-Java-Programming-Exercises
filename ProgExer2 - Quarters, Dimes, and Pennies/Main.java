@@ -25,6 +25,6 @@ public class Main
 
 	public static int[] computeCoin(int coinValue, int amountLeft)
 	{
-		return new int[]{amountLeft/coinValue, amountLeft%coinValue};
+		
 	}
 }
