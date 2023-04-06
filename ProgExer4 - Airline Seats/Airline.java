@@ -32,7 +32,7 @@ public class Airline
 
 	public void pickSeat(int seatNumber, char seatChar)
 	{
-		if((seatNumber > 7 ||  seatNumber < 1) || (Character.toUpperCase(seatChar) < 'A' || Character.toUpperCase(seatChar) > 'F'))
+		if((seatNumber > 7 ||  seatNumber < 1) || (Character.toUpperCase(seatChar) < 'A' || Character.toUpperCase(seatChar) > 'D'))
 		{
 			System.out.println("Error: Invalid input. (Range is 1A - 7D).");
 			this.displayAirlineSeats();
